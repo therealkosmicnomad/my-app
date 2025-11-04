@@ -1,3 +1,4 @@
+// src/App.jsx
 import { useEffect } from 'react'
 import { supabase } from './supabaseClient'
 import { useNavigate } from 'react-router-dom'
@@ -23,10 +24,9 @@ export default function App() {
       justifyContent: 'center',
       color: 'white',
       fontSize: '3rem',
-      fontWeight: 'bold',
-      fontFamily: 'Arial, sans-serif'
+      fontWeight: 'bold'
     }}>
-      LOGIN PAGE
+      LOGIN
     </div>
   )
 }
