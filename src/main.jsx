@@ -1,7 +1,8 @@
+// src/main.jsx
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import App from './App'
+import App from './App'  // ← This must be YOUR App.jsx (blue page)
 import Editor from './Editor'
 
 ReactDOM.createRoot(document.getElementById('root')).render(

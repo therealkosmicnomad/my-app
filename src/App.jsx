@@ -7,11 +7,9 @@ export default function App() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    const checkSession = async () => {
-      const { data } = await supabase.auth.getSession()
+    supabase.auth.getSession().then(({ data }) => {
       if (data.session) navigate('/editor')
-    }
-    checkSession()
+    })
   }, [navigate])
 
   return (
@@ -20,12 +18,14 @@ export default function App() {
       height: '100vh',
       width: '100vw',
       margin: 0,
-      padding: 0,
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      color: 'white',
+      fontSize: '2rem',
+      fontWeight: 'bold'
     }}>
-      <h1 style={{ color: 'white', fontSize: '2rem' }}>Login Page</h1>
+      LOGIN PAGE
     </div>
   )
 }
