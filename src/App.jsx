@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useEffect } from 'react'
 import { supabase } from './supabaseClient'
 import { useNavigate } from 'react-router-dom'
@@ -18,12 +17,14 @@ export default function App() {
       height: '100vh',
       width: '100vw',
       margin: 0,
+      padding: 0,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
       color: 'white',
-      fontSize: '2rem',
-      fontWeight: 'bold'
+      fontSize: '3rem',
+      fontWeight: 'bold',
+      fontFamily: 'Arial, sans-serif'
     }}>
       LOGIN PAGE
     </div>
